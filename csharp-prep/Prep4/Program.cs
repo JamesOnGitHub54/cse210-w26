@@ -6,7 +6,7 @@ class Program
     {
         List<int> numbers = new List<int>();
 
-        Console.WriteLine ("Enter a list of numbers, type 0 when finished.");
+        Console.WriteLine("Enter a list of numbers, type 0 when finished.");
 
         // Add to list until 0 is entered.
         int userNumber = -1;
@@ -26,7 +26,11 @@ class Program
         {
             sum = sum + number;
         }
-
         Console.WriteLine($"The sum is: {sum}");
+
+        // Average is calculated.
+        float countNumbers = numbers.Count;
+        float average = sum / countNumbers;
+        Console.WriteLine($"The average is: {average}");
     }
 }
