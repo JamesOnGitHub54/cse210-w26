@@ -20,7 +20,7 @@ class Program
             }
         }
 
-        // Sum is calculated.
+        // The sum is calculated.
         int sum = 0;
         foreach (int number in numbers)
         {
@@ -28,9 +28,21 @@ class Program
         }
         Console.WriteLine($"The sum is: {sum}");
 
-        // Average is calculated.
+        // The average is calculated.
         float countNumbers = numbers.Count;
         float average = sum / countNumbers;
         Console.WriteLine($"The average is: {average}");
+
+        // The maximum is stored.
+        int maximum = 0;
+        foreach (int number in numbers)
+        {
+            if (number > maximum)
+            {
+                maximum = number;
+            }
+        }
+        // Maximum number is referred to as the "largest number" in expected output.
+        Console.WriteLine($"The largest number is: {maximum}");
     }
 }
